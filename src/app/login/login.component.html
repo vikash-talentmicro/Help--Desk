@@ -1,0 +1,30 @@
+<div>
+    <div class="row">
+        <div class="col-8">
+            <img src="../../assets/banner_vector.png">
+        </div>
+        <div class="col-4">
+
+            <form class="form">
+                <h2>Login</h2>
+                <div class="input-group mb-3">
+            
+                <input autofocus type="email" [(ngModel)]="email" class="form-control" placeholder="Enter Email ID" aria-label="Username"  aria-describedby="basic-addon1">
+            
+                  </div>
+                <div class="input-group mb-3">
+                    <input  type="password" class="form-control" [(ngModel)]="password" placeholder="Enter Password">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text h-100" id="basic-addon1"><i class="fa fa-eye"></i></span>
+                      </div>
+                      
+                  </div>
+                  <span class="forgot_password">Forgot Password?</span>
+                  
+                  <button (click)="Login()" class="login ps-5 pe-5 pt-2 pb-2">Login</button>
+            </form>
+
+        </div>
+    </div>
+
+</div>
